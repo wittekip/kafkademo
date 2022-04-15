@@ -1,0 +1,10 @@
+{"namespace": "example.avro",
+ "type": "record",
+ "name": "Book",
+ "fields": [
+     {"name": "name", "type": "string"},
+     {"name": "author", "type": ["null", "string"], "default": null},
+     {"name": "someId",  "type": "int"},
+     {"name": "isbn",  "type": "string"}
+ ]
+}

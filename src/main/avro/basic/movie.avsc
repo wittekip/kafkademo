@@ -1,0 +1,9 @@
+{"namespace": "example.avro",
+ "type": "record",
+ "name": "Movie",
+ "fields": [
+     {"name": "name", "type": "string"},
+     {"name": "rating",  "type": ["null", "int"], "default": null},
+     {"name": "director", "type": ["null", "string"], "default": null}
+ ]
+}

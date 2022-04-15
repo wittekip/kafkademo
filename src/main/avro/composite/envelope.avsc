@@ -1,0 +1,88 @@
+{
+  "fields": [
+    {
+      "name": "payload",
+      "type": [
+        {
+          "fields": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "favorite_number",
+              "type": [
+                "int",
+                "null"
+              ]
+            },
+            {
+              "name": "favorite_color",
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          ],
+          "name": "User",
+          "type": "record"
+        },
+        {
+          "fields": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "default": null,
+              "name": "rating",
+              "type": [
+                "null",
+                "int"
+              ]
+            },
+            {
+              "default": null,
+              "name": "director",
+              "type": [
+                "null",
+                "string"
+              ]
+            }
+          ],
+          "name": "Movie",
+          "type": "record"
+        },
+        {
+          "fields": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "isbn",
+              "type": "string"
+            },
+            {
+              "name": "someId",
+              "type": "int"
+            },
+            {
+              "default": null,
+              "name": "author",
+              "type": [
+                "null",
+                "string"
+              ]
+            }
+          ],
+          "name": "Book",
+          "type": "record"
+        }
+      ]
+    }
+  ],
+  "name": "Envelope",
+  "namespace": "example.avro",
+  "type": "record"
+}
